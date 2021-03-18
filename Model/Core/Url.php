@@ -41,11 +41,11 @@ class Url {
 		$final = array_merge($final, $params);
 		$queryString = http_build_query($final);
 		unset($final);
-		return "http://localhost/cybercom-creation/cybercom/index.php?{$queryString}";
+		return "http://localhost/cybercom/index.php?{$queryString}";
 	}
 
 	public function baseUrl($subUrl = null) {
-		$url = "http://localhost/cybercom-creation/cybercom/";
+		$url = "http://localhost/cybercom/";
 		if ($subUrl) {
 			$url .= $subUrl;
 		}
